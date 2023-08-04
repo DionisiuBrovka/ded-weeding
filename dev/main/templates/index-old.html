@@ -1,0 +1,197 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="block anim-block">
+
+    </div>
+    <div class="block head-block">
+        <div class="back-l">
+            <img src="{% static 'img/p01.webp' %}" alt="">
+            <img src="{% static 'img/p02.webp' %}" alt="">
+        </div>
+        <div class="front-l">
+            <p class="t-1 font-lightcolor">
+                Вас приветствует Компания
+            </p>
+
+            <h1 class="t-2">
+                "Иван да Марья"
+            </h1>
+
+            <img src="{% static 'img/1.webp' %}" alt="">
+
+            <p class="t-3 font-lightcolor">
+                Дорогие, любимые
+            </p>
+
+            <p class="t-4 font-lightcolor">
+                Василий и Дарья Пупкины
+            </p>
+
+            <p class="t-5 font-lightcolor">
+                Приглашаем вас на торжество, посвященное нашему бракосочетанию
+            </p>
+
+            <p class="t-6 font-lightcolor">
+                <b>19</b> | августа | 2023
+            </p>
+        </div>
+        <div class="top-l">
+
+        </div>
+    </div>
+    <div class="block prog-block">
+        
+
+        <div class="front-l">
+            <h2 class="t-7">
+                Свадебная программа
+            </h2>
+            <hr>
+            <div class="timetable">
+
+                <!-- 1 -->
+                <div class="vid">
+                    <div class="pic">
+                        <img src="{% static 'icons/cel-rings-love-svgrepo-com.svg' %}" alt="">
+                    </div>
+
+                    <div class="b-caption">
+                        <p class="t-8"><b>10:20</b></p>
+                        <p><b>Заключение брака</b></p>
+                        <hr>
+                        <p class="font-lightcolor">г. Минск ЗАГС октябрьского района</p>
+                    </div>
+                </div>
+
+                <div class="dived">
+                    <div class="d-dived">
+                        <hr width="2" size="60">
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="vid">
+                    <div class="pic">
+                        <img src="{% static 'icons/wine-glass-wine-svgrepo-com.svg' %}" alt="">
+                    </div>
+
+                    <div class="b-caption">
+                        <p class="t-8"><b>11:00</b></p>
+                        <p><b>Небольщой фуршет и свободное время</b></p>
+                        <hr>
+                        <p class="font-lightcolor">г. Минск</p>
+                    </div>
+                </div>
+
+                <div class="dived">
+                    <div class="d-dived">
+                        <hr width="2" size="60">
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="vid">
+                    <div class="pic">
+                        <img src="{% static 'icons/car-alt-svgrepo-com.svg' %}" alt="">
+                    </div>
+
+                    <div class="b-caption">
+                        <p class="t-8"><b>15:30</b></p>
+                        <p>Трансфер из Минска</p>
+                        <hr>
+                        <p class="font-lightcolor">Адреса будут позже</p>
+                    </div>
+                </div>
+                
+                <div class="dived">
+                    <div class="d-dived">
+                        <hr width="2" size="60">
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="vid">
+                    <div class="pic">
+                        <img src="{% static 'icons/photo-camera-camera-svgrepo-com.svg' %}" alt="">
+                    </div>
+
+                    <div class="b-caption">
+                        <p class="t-8"><b>16:30</b></p>
+                        <p>Прогулка</p>
+                        <hr>
+                        <p class="font-lightcolor">г. Марьина Горка Эко-парк "Акварель"</p>
+                    </div>
+                </div>
+                
+                <div class="dived">
+                    <div class="d-dived">
+                        <hr width="2" size="60">
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="vid">
+                    <div class="pic">
+                        <img src="{% static 'icons/wedding-toast-svgrepo-com.svg' %}" alt="">
+                    </div>
+
+                    <div class="b-caption">
+                        <p class="t-8"><b>17:30</b></p>
+                        <p>Банкет</p>
+                        <hr>
+                        <p class="font-lightcolor">г. Марьина Горка Эко-парк "Акварель"</p>
+                    </div>
+                </div>
+                
+                <div class="dived">
+                    <div class="d-dived">
+                        <hr width="2" size="60">
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="vid">
+                    <div class="pic">
+                        <img src="{% static 'icons/car-alt-svgrepo-com (1).svg' %}" alt="">
+                    </div>
+
+                    <div class="b-caption">
+                        <p class="t-8"><b>23:00</b></p>
+                        <p>Трансфер из Марьиной Горки</p>
+                        <hr>
+                        <p class="font-lightcolor">г. Марьина Горка Эко-парк "Акварель"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-l">
+            <img src="{% static 'img/p03.webp' %}" alt="">
+            <img src="{% static 'img/p04.webp' %}" alt="">
+        </div>
+        
+        <div class="top-l">
+
+        </div>
+    </div>
+</body>
+
+</html>

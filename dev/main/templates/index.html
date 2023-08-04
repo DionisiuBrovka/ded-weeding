@@ -1,0 +1,317 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение | 19 августа 2023 </title>
+
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="{% static 'js/anim.js'%}"></script>
+    <script src="{% static 'js/anim-list.js'%}"></script>
+</head>
+
+<body>
+    <div class="block-anim container-fluid">
+
+    </div>
+
+    <div class="block-main container-fluid">
+        <div class="backed">
+            <img class="b-p-l anim-items-list" src="{% static 'img/p01.webp' %}" alt="">
+            <img class="b-p-r anim-items-list" src="{% static 'img/p02.webp' %}" alt="">
+        </div>
+
+        <div class="row ">
+            <div class="col">
+
+                <div class="front-l">
+                    <div class="cover anim-items-list">
+                        <p class="t-1 font-lightcolor">
+                            Вас приветствует Компания
+                        </p>
+
+                        <h1 class="t-2">
+                            "Иван да Марья"
+                        </h1>
+
+                        <img src="{% static 'img/1.webp' %}" alt="">
+
+                        <p class="t-3 font-lightcolor">
+                            {% if data.is_multi %}
+                                Дорогие, любимые
+                            {% else %}
+                                {% if data.is_men %}
+                                    Дорогой, любимый
+                                {% else %}
+                                    Дорогая, любимая
+                                {% endif %}
+                            {% endif %}
+                        </p>
+
+                        <p class="t-4 font-lightcolor">
+                            {{data.name}}
+                        </p>
+
+                        <p class="t-5 font-lightcolor">
+                            Приглашаем вас на торжество, посвященное нашему бракосочетанию
+                        </p>
+
+                        <div class="date-b t-6 font-lightcolor">
+                            <p class="date-1 anim-items-list"><b>19</b></p> 
+                            <p>|</p>
+                            <p class="date-2 anim-items-list">августа</p> 
+                            <p>|</p>
+                            <p class="date-3 anim-items-list">2023</p>
+                        </div>
+
+                        <!-- <p class="t-6 font-lightcolor"> 
+                            <span class="date-1 anim-items"><b>19</b></span> 
+                            |  
+                            <span class="date-2 anim-items">августа</span> 
+                            |
+                            <span class="date-3 anim-items">2023</span>
+                        </p> -->
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="block-prog container-fluid">
+        <div class="row">
+            <div class="col">
+                <h2 class="t-7">
+                    Свадебная программа
+                </h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <!-- 1 -->
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col">
+                        <div class="vid">
+
+                            <div class="pic anim-items-list">
+                                <img src="{% static 'icons/1.webp' %}" alt="">
+                            </div>
+
+                            <div class="b-caption">
+                                <div class="b-caption-h anim-items-list">
+                                    <p class="t-8"><b>10:20</b></p>
+                                </div>
+                                <div class="b-caption-b anim-items-list">
+                                    <p><b>Заключение брака</b></p>
+                                    <hr>
+                                    <p class="font-lightcolor">г. Минск ЗАГС октябрьского района</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="dived anim-items-list">
+                            <div class="d-dived anim-items-list">
+                                <hr width="2" size="60">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+
+
+                <!-- 2 -->
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col">
+                        <div class="vid">
+
+                            <div class="pic anim-items-list">
+                                <img src="{% static 'icons/2.webp' %}" alt="">
+                            </div>
+
+                            <div class="b-caption">
+                                <div class="b-caption-h anim-items-list">
+                                    <p class="t-8"><b>11:00</b></p>
+                                </div>
+                                <div class="b-caption-b anim-items-list">
+                                    <p><b>Небольшой фуршет и свободное время</b></p>
+                                    <hr>
+                                    <p class="font-lightcolor">г. Минск</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="dived anim-items-list">
+                            <div class="d-dived anim-items-list">
+                                <hr width="2" size="60">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+
+
+                <!-- 3 -->
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col">
+                        <div class="vid">
+
+                            <div class="pic anim-items-list">
+                                <img src="{% static 'icons/3.webp' %}" alt="">
+                            </div>
+
+                            <div class="b-caption">
+                                <div class="b-caption-h anim-items-list">
+                                    <p class="t-8"><b>15:30</b></p>
+                                </div>
+                                <div class="b-caption-b anim-items-list">
+                                    <p><b>Трансфер из Минска</b></p>
+                                    <hr>
+                                    <p class="font-lightcolor">Адреса будут позже</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="dived anim-items-list">
+                            <div class="d-dived anim-items-list">
+                                <hr width="2" size="60">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+
+
+                <!-- 4 -->
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col">
+                        <div class="vid">
+                            <div class="pic anim-items-list">
+                                <img src="{% static 'icons/4.webp' %}" alt="">
+                            </div>
+
+                            <div class="b-caption">
+
+                                <div class="b-caption-h anim-items-list">
+                                    <p class="t-8"><b>16:30</b></p>
+                                </div>
+
+                                <div class="b-caption-b anim-items-list">
+                                    <p><b>Прогулка</b></p>
+                                    <hr>
+                                    <p class="font-lightcolor">г. Марьина Горка Эко-парк "Акварель"</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="dived anim-items-list">
+                            <div class="d-dived anim-items-list">
+                                <hr width="2" size="60">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+
+
+                <!-- 5 -->
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col">
+                        <div class="vid">
+
+                            <div class="pic anim-items-list">
+                                <img src="{% static 'icons/5.webp' %}" alt="">
+                            </div>
+
+                            <div class="b-caption">
+                                <div class="b-caption-h anim-items-list">
+                                    <p class="t-8"><b>17:30</b></p>
+                                </div>
+                                <div class="b-caption-b anim-items-list">
+                                    <p><b>Банкет</b></p>
+                                    <hr>
+                                    <p class="font-lightcolor">г. Марьина Горка Эко-парк "Акварель"</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="dived anim-items-list">
+                            <div class="d-dived anim-items-list">
+                                <hr width="2" size="60">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+
+
+                <!-- 6 -->
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col">
+                        <div class="vid">
+
+                            <div class="pic anim-items-list"> 
+                                <img src="{% static 'icons/6.webp' %}" alt="">
+                            </div>
+
+                            <div class="b-caption">
+                                <div class="b-caption-h anim-items-list">
+                                    <p class="t-8"><b>23:00</b></p>
+                                </div>
+                                <div class="b-caption-b anim-items-list">
+                                    <p><b>Трансфер из Марьиной Горки</b></p>
+                                    <hr>
+                                    <p class="font-lightcolor">г. Марьина Горка Эко-парк "Акварель"</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="backed">
+            <img src="{% static 'img/p03.webp' %}" alt="">
+            <img src="{% static 'img/p04.webp' %}" alt="">
+        </div>
+    </div>
+
+    <div class="block-footer container-fluid">
+        <div class="row">
+            <div class="col">
+                2023 @ Made by <a href="mailto:dev.dionisiu.brovka@gmail.com">Dionisiu Brovka</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
