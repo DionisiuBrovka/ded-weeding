@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import pg_index
+from .views import pg_index, pg_main
 
 urlpatterns = [
-    path('<int:pk>', pg_index),
+    path('<slug:slug>', pg_index),
+    path('', pg_main),
 ]
