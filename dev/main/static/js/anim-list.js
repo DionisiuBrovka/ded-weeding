@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 const animItem = animItems[index];
                 const animItemHeight = animItem.offsetHeight;
                 const animItemOffset = offset(animItem).top;
-                const animStart = 1;
+                const animStart = 4;
     
                 let animItemPoint = window.innerHeight - animItemHeight / animStart;
     
