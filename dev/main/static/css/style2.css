@@ -387,3 +387,33 @@ body {
         opacity: 0;
     }
 }
+
+.toped{
+    height: 100vh;
+    position: relative;
+    margin-top: -100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.toped img{
+    opacity: 0;
+
+    transition: 2s;
+    animation: show 3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
